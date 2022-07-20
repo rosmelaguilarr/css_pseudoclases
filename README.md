@@ -6,15 +6,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://flexbox-css-responsive.netlify.app/">
+    <a href="https://flexbox-css-responsive.netlify.app/" target="_blank">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/rosmeltd/desafio_github">
+    <a href="https://github.com/rosmeltd/desafio_github" target="_blank">
       Solution
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/home/my-challenges">
+    <a href="https://www.frontendmentor.io/home/my-challenges" target="_blank">
       Challenge
     </a>
   </h3>
