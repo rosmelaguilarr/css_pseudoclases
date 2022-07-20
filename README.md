@@ -10,7 +10,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/rosmeltd/team-page">
+    <a href="https://github.com/rosmeltd/desafio_github">
       Solution
     </a>
     <span> | </span>
