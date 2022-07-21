@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="" target="_blank">
+    <a href="https://rosmeltd.github.io/css_pseudoclases/" target="_blank">
       Demo
     </a>
     <span> | </span>
