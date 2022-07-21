@@ -88,10 +88,6 @@ body{
     padding: 0.2rem .5rem;
 }
 /* ============ CHALLENGE 7 ============ */
-
-.challenge-7 .challenge__code p {
-    position: relative;
-}
 .challenge-7 .challenge__code p::before,
 .challenge-7 .challenge__code p::after{
     content: url(img/smiley.gif);
