@@ -3,91 +3,102 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-
-  <title>Frontend Mentor | Four card feature section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-    footer{
-      position: fixed;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%);
-    }
-  </style>
+  <title>Pseudoclases</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="container">
-    <header class="copy">
-      <h1 class="copy__title">
-        Reliable, efficient delivery
-        <span class="copy__subtitle">Powered by Technology</span>
-      </h1>
-      <p class="copy__text">
-        Our Artificial Intelligence powered tools use millions of project data points
-        to ensure that your project is successful
-      </p>
-    </header>
-    <main class="cards">
-      <article class="card">
-        <h3 class="card__title">Supervisor</h3>
-        <p class="card__text">
-          Monitors activity to identify project roadblocks
-        </p>
-        <div class="card__icon">
-          <img src="img/icon-supervisor.svg" alt="">
+    <h1 class="title">CSS Pseudoclases</h1>
+    <main class="challenges">
+      <section class="challenge challenge-1">
+        <h4 class="challenge__title">
+          <b>I.</b> Establezca el color de fondo en rojo cuando pase el mouse sobre un enlace.
+        </h4>
+        <div class="challenge__code">
+          <h1>This is a header.</h1>
+          <p>This is a paragraph.</p>
+          <a href="https://larnu.app/#/">This is a link.</a>
         </div>
-      </article>
-      <article class="card">
-        <h3 class="card__title">Team Builder</h3>
-        <p class="card__text">
-          Scans our talent network to create the optimal team for your project
-        </p>
-        <div class="card__icon">
-          <img src="img/icon-team-builder.svg" alt="">
+      </section>
+      <section class="challenge challenge-2">
+        <h4 class="challenge__title">
+          <b>II.</b> Establezca el color de fondo en rojo, cuando pase el mouse sobre elementos con la clase "master".
+        </h4>
+        <div class="challenge__code">
+          <h1 class="master">This is a header.</h1>
+          <p class="master">This is a paragraph.</p>
+          <p>This is a paragraph.</p>
         </div>
-      </article>
-      <article class="card">
-        <h3 class="card__title">Karma</h3>
-        <p class="card__text">
-          Regularly evaluates our talent to ensure quality
-        </p>
-        <div class="card__icon">
-          <img src="img/icon-karma.svg" alt="">
+      </section>
+      <section class="challenge challenge-3">
+        <h4 class="challenge__title">
+          <b>III.</b> Establezca el color de fondo en rojo, de cualquier elemento &lt;p&gt; que sea el primer hijo de
+          cualquier elemento.
+        </h4>
+        <div class="challenge__code">
+          <p>This is a paragraph.</p>
+          <p>This is a paragraph.</p>
         </div>
-      </article>
-      <article class="card">
-        <h3 class="card__title">Calculator</h3>
-        <p class="card__text">
-          Uses data from past projects to provide better delivery estimates
-        </p>
-        <div class="card__icon">
-          <img src="img/icon-calculator.svg" alt="">
+      </section>
+      <section class="challenge challenge-4">
+        <h4 class="challenge__title">
+          <b>IV.</b> Establezca el color de fondo en rojo, de cualquier elemento &lt;input&gt; que esté enfocado.
+        </h4>
+        <div class="challenge__code">
+          <form>
+            Name:
+            <input type="text" name="fname">
+            Age:
+            <input type="text" name="age">
+          </form>
         </div>
-      </article>
+      </section>
+      <section class="challenge challenge-5">
+        <h4 class="challenge__title">
+          <b>V.</b> Establezca el color de fondo en rojo, de la primera línea del párrafo.
+        </h4>
+        <div class="challenge__code">
+          <p class="intro">
+            In my younger and more vulnerable years
+            my father gave me some advice that I've
+            been turning over in my mind ever since.
+            'Whenever you feel like criticizing anyone,' he told me,
+            'just remember that all the people in this world
+            haven't had the advantages that you've had.'
+          </p>
+        </div>
+      </section>
+      <section class="challenge challenge-6">
+        <h4 class="challenge__title">
+          <b>VI.</b> Establezca el color de fondo en rojo, para la primera letra del elemento &lt;p&gt;.
+        </h4>
+        <div class="challenge__code">
+          <p class="intro">
+            In my younger and more vulnerable years
+            my father gave me some advice that I've
+            been turning over in my mind ever since.
+            'Whenever you feel like criticizing anyone,' he told me,
+            'just remember that all the people in this world
+            haven't had the advantages that you've had.'
+          </p>
+        </div>
+      </section>
+      <section class="challenge challenge-7">
+        <h4 class="challenge__title">
+          <b>VII.</b> Inserte la imagen "smiley.gif" antes y después de cualquier elemento &lt;p&gt;, utilizando los
+          pseudoelementos ::before y ::after.
+        </h4>
+        <div class="challenge__code">
+          <p>This is a paragraph.</p>
+          <p>This is a paragraph.</p>
+        </div>
+      </section>
     </main>
-  </div>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Rosmel</a>.
-    </p>
-  </footer>
+  </div>
 </body>
 
 </html>

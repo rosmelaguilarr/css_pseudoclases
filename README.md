@@ -1,4 +1,4 @@
-<h1 align="center">Flexbox CSS Responsive</h1>
+<h1 align="center">CSS Pseudoclases</h1>
 
 <div align="center">
    Solution for a challenge from Larnu.
@@ -6,15 +6,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://flexbox-css-responsive.netlify.app/" target="_blank">
+    <a href="" target="_blank">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/rosmeltd/desafio_github" target="_blank">
+    <a href="https://github.com/rosmeltd/css_pseudoclases" target="_blank" target="_blank">
       Solution
     </a>
     <span> | </span>
-    <a href="https://www.frontendmentor.io/home/my-challenges" target="_blank">
+    <a href="https://github.com/larnu-bootcamp/larnu-bootcamp/blob/main/05-Css_Pseudoclases/README.md" target="_blank">
       Challenge
     </a>
   </h3>
@@ -33,7 +33,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/rosmeltd/desafio_github/blob/main/img/overview.png?raw=true)
+![screenshot]()
 
 ### Built With
 
@@ -42,7 +42,7 @@
 
 ## Features
 
-This website was built to implement flexbox and responsive design.
+This challenge is to implement the pseudo elements and pseudo classes.
 
 ## Contact
 

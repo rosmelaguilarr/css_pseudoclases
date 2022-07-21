@@ -1,17 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
-:root{
-    --red: hsl(0, 78%, 62%);
-    --cyan: hsl(180, 62%, 55%);
-    --orange: hsl(34, 97%, 64%);
-    --blue: hsl(212, 86%, 64%);
-
-    --very-dark-blue: hsl(234, 12%, 34%);
-    --grayish-blue: hsl(229, 6%, 66%);
-    --very-light-gray: hsl(0, 0%, 98%);
-}
 *{
     box-sizing: border-box;
+    --color-primary: #1e2249;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -19,85 +10,96 @@ body{
     margin: 0;
 }
 .container{
-    max-width: 1440px;
-    width: 95%;
+    width: 90vw;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: auto;
+    gap: 2rem;
+}
+.title{
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 0;
+}
+.challenges{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
 }
-.copy{
-    text-align: center;
-    max-width: 500px;
-}
-.copy__title{
-    color: var(--grayish-blue);
-    font-weight: 200;
-}
-.copy__subtitle{
-    display: block;
-    font-weight: 600;
-    color: var(--very-dark-blue);
-}
-.cards{
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.card{
-    padding: 2rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 6px var(--grayish-blue);
+.challenge{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    max-width: 400px;
-    min-height: 300px;
 }
-.card__title{
-    color: var(--very-dark-blue);
-    margin: 0;
+.challenge__title{
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: .5rem 1rem;
+    font-weight: 200;
+    margin-bottom: 0;
+    margin-top: 0;
 }
-.card__icon{
-    align-self: flex-end;
-    margin-top: auto;
+.challenge__code{
+    background-color: rgba(30, 34, 73, 0.01);
+    border: 1px dashed rgba(128, 128, 128, 0.5);
+    border-top: none;
+    padding: 1rem;
+    flex-grow: 1;
 }
-/* supervisor */
-.card:nth-child(1){
-    border-top: 3px solid var(--cyan);
-    order: 0;
+/* ============ CHALLENGE 1 ============ */
+.challenge-1 .challenge__code a:hover {
+    background-color: red;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 0.2rem .5rem;
+}
+/* ============ CHALLENGE 2 ============ */
+.challenge-2 .challenge__code .master:hover{
+    background-color: red;
+    color: #fff;
+    padding: 0.2rem .5rem;
+}
+/* ============ CHALLENGE 3 ============ */
+.challenge-3 .challenge__code p:first-child{
+    background-color: red;
+    color: #fff;
+    padding: 0.2rem .5rem;
+}
+/* ============ CHALLENGE 4 ============ */
+.challenge-4 .challenge__code input:focus{
+    background-color: red;
+    color: #fff;
+    padding: 0.2rem .5rem;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+/* ============ CHALLENGE 5 ============ */
+.challenge-5 .challenge__code .intro::first-line{
+    background-color: red;
+    color: #fff;
+    padding: 0.2rem .5rem;
+}
+/* ============ CHALLENGE 6 ============ */
+.challenge-6 .challenge__code .intro::first-letter{
+    background-color: red;
+    color: #fff;
+    padding: 0.2rem .5rem;
+}
+/* ============ CHALLENGE 7 ============ */
+
+.challenge-7 .challenge__code p {
     position: relative;
-    top: 150px;
-}   
-/* Team build */
-.card:nth-child(2){
-    border-top: 3px solid var(--red);
-    order: 1;
 }
-/* Karma */
-.card:nth-child(3){
-    border-top: 3px solid var(--orange);
-    order: 3;
+.challenge-7 .challenge__code p::before,
+.challenge-7 .challenge__code p::after{
+    content: url(img/smiley.gif);
+    vertical-align: middle;
 }
-/* Calculator */
-.card:nth-child(4){
-    border-top: 3px solid var(--blue);
-    order: 2;
-    position: relative;
-    top: 150px;
-}
-@media screen and (max-width: 1200px) {
-    .card:nth-child(1){
-        position: unset;
-    } 
-    .card:nth-child(4){
-        position: unset;
-    } 
-    .copy__title{
-        font-size: 24px;
+/* ============ RESPONSIVE ============ */
+@media screen and (max-width: 992px) {
+    .challenges{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
